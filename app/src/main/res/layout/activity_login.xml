@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.softvilla.edusol.Login">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edulogo"
+        android:id="@+id/imageView5" />
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/dropDownBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="Select School"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:background="@drawable/dropdown"/>
+
+        <EditText
+            android:id="@+id/cnicEditText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="CNIC"
+            android:inputType="number"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:background="@drawable/entercnic"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Submit"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:background="@drawable/submitrec"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/poweredBy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/powerdby" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@id/poweredBy"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/book"
+        android:id="@+id/imageView2" />
+</RelativeLayout>

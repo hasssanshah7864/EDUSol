@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fillViewport="true">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/lbs"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:background="#ba1f04"-->
+
+    <!--android:onClick="onClick"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:text="Lebusinessness School"-->
+    <!--android:textColor="#fff" />-->
+
+    <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+    <!--android:id="@+id/expandableLayout"-->
+    <!--android:layout_below="@+id/lbs"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:ael_expanded="false"-->
+    <!--app:ael_duration="500"-->
+    <!--app:ael_interpolator="bounce"-->
+    <!--app:ael_orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/text"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="sample" />-->
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/text"-->
+    <!--android:text="sample2" />-->
+    <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+
+
+
+    <!--</RelativeLayout>-->
+
+    <!--</ScrollView>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:id="@+id/CurrentStatus" />
+
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/feerecycler"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#e7e7e7"
+        android:clipToPadding="false"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout" />
+
+</RelativeLayout>

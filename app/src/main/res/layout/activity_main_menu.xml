@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.softvilla.edusol.MainMenu">
+
+
+
+    <ScrollView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/profileBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/div"
+                    android:background="@drawable/l_corner_one_rec">
+                    <TextView
+                        android:id="@+id/profileText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingLeft="10dp"
+                        android:text="Profile"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/profile_icon"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/div"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/galleryBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/div"
+                    android:alpha="0.7"
+                    android:background="@drawable/r_corner_two_rec">
+                    <TextView
+                        android:id="@+id/galleryText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:text="Gallery"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/gallery"
+                        android:layout_marginLeft="10dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/attendanceBtn"
+                    android:onClick="attendanceClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/div2"
+                    android:background="@drawable/l_inner_rec"
+                    tools:ignore="OnClick">
+                    <TextView
+                        android:id="@+id/attendanceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingLeft="10dp"
+                        android:text="Attendance"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/attendus_icon"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/div2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/resultBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:onClick="resultClick"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/div2"
+                    android:background="@drawable/r_inner_rec"
+                    tools:ignore="OnClick">
+                    <TextView
+                        android:id="@+id/resultText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:text="Result"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/result"
+                        android:layout_marginLeft="10dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/FeeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:onClick="feeClick"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/div3"
+                    android:background="@drawable/l_inner_rec"
+                    tools:ignore="OnClick">
+                    <TextView
+                        android:id="@+id/feeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingLeft="10dp"
+                        android:text="Fee"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/fee"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/div3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/circularBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:onClick="circularClick"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/div3"
+                    android:background="@drawable/r_inner_rec">
+                    <TextView
+                        android:id="@+id/circularText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:text="Circular"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/circular"
+                        android:layout_marginLeft="10dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/academicBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/div4"
+                    android:background="@drawable/l_inner_rec">
+                    <TextView
+                        android:id="@+id/academicText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingLeft="10dp"
+                        android:text="Academic"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/academic"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/div4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/progressBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/div4"
+                    android:background="@drawable/r_inner_rec">
+                    <TextView
+                        android:id="@+id/progressText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:text="Progress"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/progress"
+                        android:layout_marginLeft="10dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rhymesBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/div5"
+                    android:background="@drawable/l_inner_rec">
+                    <TextView
+                        android:id="@+id/rhymesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingLeft="10dp"
+                        android:text="Rhymes"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/rhymes"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/div5"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/wallpapersBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/div5"
+                    android:background="@drawable/r_inner_rec">
+                    <TextView
+                        android:id="@+id/wallpapersText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:text="Wallpapers"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/wallpapers"
+                        android:layout_marginLeft="10dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/questionsBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/div6"
+                    android:background="@drawable/l_inner_rec">
+                    <TextView
+                        android:id="@+id/questionsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingLeft="10dp"
+                        android:text="Questions"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/questions"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/div6"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/quizBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/div6"
+                    android:background="@drawable/r_inner_rec">
+                    <TextView
+                        android:id="@+id/quizText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:text="Quiz"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/quiz"
+                        android:layout_marginLeft="10dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/taskBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/div7"
+                    android:background="@drawable/l_inner_rec">
+                    <TextView
+                        android:id="@+id/taskText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingLeft="10dp"
+                        android:text="Task"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/task"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/div7"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/complaintBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/div7"
+                    android:background="@drawable/r_inner_rec">
+                    <TextView
+                        android:id="@+id/complaintText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:text="Complaint Box"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/complaint_box"
+                        android:layout_marginLeft="10dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/strategicPartnerBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/div8"
+                    android:background="@drawable/l_corner_two_rec">
+                    <TextView
+                        android:id="@+id/strategicPartnerText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="13sp"
+                        android:paddingLeft="10dp"
+                        android:text="Strategic Partner"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/strategic_partner"
+                        android:layout_marginRight="10dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/div8"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/newsBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/div8"
+                    android:background="@drawable/r_corner_rec">
+                    <TextView
+                        android:id="@+id/newsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FFF"
+                        android:textSize="16sp"
+                        android:paddingRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:text="News"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/news"
+                        android:layout_marginLeft="10dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout
+    android:id="@+id/childCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rec">
+    <!--app:cardCornerRadius="@dimen/activity_vertical_margin"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="58dp"
+            android:layout_height="61dp"
+            android:id="@+id/circleView"
+            app:siBorderWidth="2dp"
+            app:siBorderColor="#FFF"
+            />
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/circleView"
+            android:text="Title"
+            android:textColor="#FFF"
+
+            android:textSize="22dp" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

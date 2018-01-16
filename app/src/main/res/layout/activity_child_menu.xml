@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.softvilla.edusol.ChildMenu">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/attendanceBuuton"
+            android:onClick="attendanceClick"
+            android:text="Attendance"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="10dp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/feeBuuton"
+            android:onClick="feeClick"
+            android:text="Fee"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="10dp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/resultBuuton"
+            android:onClick="resultClick"
+            android:text="Reult"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="10dp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/noticeBuuton"
+            android:onClick="noticeClick"
+            android:text="Notice"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_margin="10dp"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+</RelativeLayout>
